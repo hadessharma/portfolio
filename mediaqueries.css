@@ -6,3 +6,21 @@
     display: flex;
   }
 }
+
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .left-section,
+  .section-container {
+    flex-basis: auto; /* Auto adjusts the basis on smaller screens */
+    width: 90%; /* Reduce width to improve readability */
+  }
+
+  .details-container,
+  .text-container {
+    width: 100%; /* Make these containers full width on smaller screens */
+  }
+}
