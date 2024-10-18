@@ -6,6 +6,7 @@
     <title>My Website</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="darkmode.css" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -37,6 +38,7 @@
         </div>
       </div>
     </nav>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="Deep Sharma profile picture" />
@@ -75,54 +77,48 @@
         </div>
       </div>
     </section>
-    <section id="about">
-      <div class="left-section">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-      </div>
-      <div class="section-container">
-        <div class="right-section">
-          <div class="details-container" id="experience">
-            <img
-              src="./assets/experience.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <h3>Experience</h3>
-            <p>2+ years <br />Software Engineer</p>
-          </div>
-          <div class="details-container" id="education">
-            <img
-              src="./assets/education.png"
-              alt="Education icon"
-              class="icon"
-            />
-            <h3>Education</h3>
-            <!--noformat-->
-            <p>
-              M.S. Computer Science Arizona State University, USA<br />B.Tech.
-              Computer Science Engineering SRM Institute of Science and
-              Technology, India
-            </p>
-            <!--noformat-->
-          </div>
-          <div class="text-container">
-            <p>
-              I am a graduate student at Arizona State University with three
-              years of work experience in Software Development and DevOps in the
-              industry. I'm also passionate about building web applications and
-              designing automated cloud infrastructure deployment platforms.
-            </p>
-          </div>
+    <about-section></about-section>
+    <experience-section></experience-section>
+    <project-section></project-section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:examplemail@gmail.com">de.sharma993@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/deepsharma993/">LinkedIn</a>
+          </p>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
-    <script src="script.js"></script>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Deep Sharma. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="script.js"></script>
   </body>
 </html>

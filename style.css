@@ -270,7 +270,7 @@ section {
   justify-content: center; /* Centers children horizontally in the container */
   align-items: center; /* Centers children vertically in the container */
   height: 100vh; /* Set the height to full viewport height */
-  gap: 1rem; /* Reduced space between the left section and section container */
+  gap: 0; /* No gap between the sections */
 }
 
 .left-section,
@@ -290,7 +290,7 @@ section {
   display: flex;
   flex-direction: column; /* Stack experience and education on top of each other */
   align-items: center; /* Center align these items within the right section */
-  gap: 1rem; /* Space between experience and education */
+  gap: 0.5rem; /* Minimal space between experience and education */
 }
 
 .details-container {
@@ -306,12 +306,24 @@ section {
   padding: 1rem; /* Consistency in padding */
 }
 
+/* Use negative margins to bring sections closer */
 .left-section {
-  margin-right: 0.5rem; /* Adjust right margin to pull sections closer */
+  position: relative;
+  top: -70px; /* Move up by 10px; adjust the value as needed */
+  right: -50px; /* Move right by 10px; this is a negative value to move it right */
 }
 
 .section-container {
-  margin-left: 0.5rem; /* Adjust left margin to pull sections closer */
+  margin-left: -0.5rem; /* Pull left section closer */
+}
+
+.degree {
+  font-weight: bold; /* Makes the degree bold */
+}
+
+.university {
+  font-style: italic; /* Italicize the university name */
+  padding-left: 5px; /* Adds spacing between the degree and university */
 }
 
 /* end new */
@@ -378,8 +390,10 @@ section {
 
 .experience-details-container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers items horizontally */
+  align-items: flex-start; /* Align items from the top */
+  gap: 20px; /* Optional: adds some space between the cards */
 }
 
 .article-container {
@@ -393,11 +407,173 @@ section {
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  /* justify-content: space-around; */
   gap: 0.5rem;
 }
 
 article .icon {
+  height: 2rem;
+  width: 2rem;
   cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* EXTRA */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-toggle:focus + .dropdown-content {
+  display: block;
+}
+
+.details-container.color-container {
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
+  max-width: 300px; /* Maximum width of each card */
+  margin: 10px; /* Space between cards */
+  padding: 20px; /* Padding inside each card */
+  background-color: #fff; /* Background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border-radius: 10px; /* Rounded corners for aesthetics */
+  transition: transform 0.3s; /* Smooth transform effect on hover */
+}
+.details-container.color-container:hover {
+  transform: translateY(-5px); /* Slight raise effect on hover */
+}
+
+.project-img {
+  width: 100%; /* Make the image fill the card width */
+  height: auto; /* Maintain aspect ratio */
+  border-top-left-radius: 10px; /* Rounded corners on the top */
+  border-top-right-radius: 10px;
+}
+
+.dropdown-toggle {
+  border: none; /* No border */
+  cursor: pointer; /* Cursor pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for color change */
+  color: black;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9; /* Slightly off-white for contrast with the button */
+  min-width: 160px; /* Minimum width to ensure content is visible */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  z-index: 1; /* Ensures dropdown content stacks on top of other content */
+  border: 2px solid #ccc; /* Matching border with the button */
+  border-radius: 8px; /* Rounded corners for dropdown content */
+  overflow: hidden; /* Ensures no inner content overflows the rounded borders */
+}
+
+.dropdown-content a {
+  color: black; /* Text color for links */
+  padding: 12px 16px; /* Padding for clickable area */
+  text-decoration: none; /* No underline */
+  display: block; /* Makes each link block-level for better hit area */
+  transition: background-color 0.2s; /* Smooth transition for hover */
+}
+
+.dropdown-content a:hover {
+  background-color: #e6e6e6; /* Light grey background on hover */
 }
