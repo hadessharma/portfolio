@@ -259,18 +259,14 @@ section {
 
 /* ABOUT SECTION */
 
-/* Origin */
-/* #about {
-  position: relative;
-} */
-
 /* new */
 #about {
+  position: relative;
   display: flex;
   justify-content: center; /* Centers children horizontally in the container */
-  align-items: center; /* Centers children vertically in the container */
-  height: 100vh; /* Set the height to full viewport height */
-  gap: 0; /* No gap between the sections */
+  align-items: center;
+  height: 100vh;
+  gap: 0;
 }
 
 .left-section,
@@ -377,8 +373,9 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
-  position: relative;
+#experience-section {
+  padding-top: 120px; /* Adjust this value based on the height of your fixed navbar or other elements */
+  margin-top: -120px; /* Negative margin to offset the padding if needed */
 }
 
 .experience-sub-title {

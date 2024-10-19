@@ -40,15 +40,15 @@ class ProjectSection extends HTMLElement {
   }
 }
 
-document
-  .getElementById("dark-mode-toggle")
-  .addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-    // You can also toggle on specific elements or components if needed
-    document.querySelectorAll("about-section").forEach((el) => {
-      el.classList.toggle("dark-mode");
-    });
-  });
+// document
+//   .getElementById("darkmode-toggle")
+//   .addEventListener("click", function () {
+//     document.body.classList.toggle("dark-mode");
+//     // You can also toggle on specific elements or components if needed
+//     document.querySelectorAll("about-section").forEach((el) => {
+//       el.classList.toggle("dark-mode");
+//     });
+//   });
 
 document.addEventListener("DOMContentLoaded", function () {
   initializeDropdown();
