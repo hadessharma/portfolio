@@ -76,3 +76,28 @@ document.addEventListener("click", function (e) {
 customElements.define("experience-section", ExperienceSection);
 customElements.define("about-section", AboutSection);
 customElements.define("project-section", ProjectSection);
+
+// document
+//   .querySelector(".details-container.color-container")
+//   .addEventListener("mouseenter", function () {
+//     const images = this.querySelectorAll(".slide");
+//     let index = 0;
+
+//     function nextSlide() {
+//       images[index].style.opacity = 0;
+//       index = (index + 1) % images.length;
+//       images[index].style.opacity = 1;
+//     }
+
+//     const interval = setInterval(nextSlide, 3000);
+
+//     this.addEventListener(
+//       "mouseleave",
+//       function () {
+//         clearInterval(interval);
+//         images.forEach((img) => (img.style.opacity = 0));
+//         images[0].style.opacity = 1;
+//       },
+//       { once: true }
+//     );
+//   });

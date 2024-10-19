@@ -162,7 +162,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 70vh;
 }
 
 .section__pic-container {
@@ -401,22 +401,23 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  gap: 2.5rem; /* Maintains a good gap between rows and columns */
+  justify-content: space-around; /* Even spacing around items */
 }
 
 article {
   display: flex;
   align-items: center;
-  width: auto;
-  /* justify-content: space-around; */
+  width: auto; /* Flexible width based on content, consider setting a min-width */
+  /* padding: 10px; Optional: Adds padding around the icon */
   gap: 0.5rem;
 }
 
 article .icon {
-  height: 2rem;
-  width: 2rem;
+  width: 7rem; /* Set only the width */
+  height: auto; /* Height adjusts automatically to maintain aspect ratio */
   cursor: default;
+  display: block; /* Ensures the image is on its own line and sized correctly */
 }
 
 /* PROJECTS SECTION */

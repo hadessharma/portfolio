@@ -1,0 +1,48 @@
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Hide overflow to keep slides contained */
+}
+
+.project-img.slide {
+  position: absolute;
+  top: 0;
+  left: 100%; /* Start sliding from the right */
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: slideIn 12s infinite; /* Adjust total time for the full loop */
+}
+
+@keyframes slideIn {
+  0%,
+  33% {
+    left: 100%; /* Images are positioned outside the view */
+    opacity: 0;
+  }
+  11%,
+  22% {
+    left: 0; /* Slide in */
+    opacity: 1;
+  }
+  33.333%,
+  100% {
+    left: 200%; /* Slide out */
+    opacity: 0;
+  }
+}
+
+.project-img.slide:nth-child(2) {
+  animation-delay: 4s; /* Delay so that the second image comes in second */
+}
+
+.project-img.slide:nth-child(3) {
+  animation-delay: 8s; /* Delay so that the third image comes in last */
+}
+
+.project-img.slide.static {
+  position: relative;
+  left: 0;
+  opacity: 1;
+  animation: none; /* No animation for the first image */
+}

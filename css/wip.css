@@ -1,0 +1,15 @@
+.work-in-progress-banner {
+  background-color: #ffcc00; /* Bright yellow background */
+  color: black; /* Text color */
+  text-align: center; /* Center the text inside the banner */
+  padding: 10px 0; /* Top and bottom padding */
+  font-size: 1.2em; /* Larger text to make it noticeable */
+  font-weight: bold; /* Bold text to stand out */
+  width: 100%; /* Banner should span the full width of the viewport */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds depth with a slight shadow */
+}
+
+.work-in-progress-banner {
+  position: relative; /* Use 'fixed' if you want it always visible on scroll */
+  z-index: 1000; /* High z-index to ensure it's above other content */
+}
