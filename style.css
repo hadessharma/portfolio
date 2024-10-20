@@ -575,3 +575,27 @@ footer p {
 .dropdown-content a:hover {
   background-color: #e6e6e6; /* Light grey background on hover */
 }
+
+/* BACK TO TOP */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px; /* Increased width */
+  height: 60px; /* Increased height */
+  border: none;
+  background-color: #333;
+  color: #fff; /* Set text color to white */
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px; /* Increased font size */
+  display: none; /* Initially hidden */
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #555;
+}
