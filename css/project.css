@@ -33,6 +33,8 @@
   cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Enhanced shadow for 3D effect */
   transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition for hover effects */
+  font-family: Arial, sans-serif; /* Ensures a web-safe font that doesn't convert to emoji */
+  font-weight: bold; /* Makes the 'i' more prominent */
 }
 
 .info-button:hover {
