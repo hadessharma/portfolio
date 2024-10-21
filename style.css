@@ -394,6 +394,7 @@ section {
 }
 
 .article-container {
+  position: relative; /* Critical for absolute positioning of children */
   display: flex;
   text-align: initial;
   flex-wrap: wrap;

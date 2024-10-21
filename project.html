@@ -2,74 +2,81 @@
   <p class="section__text__p1">Browse My Recent</p>
   <h1 class="title">Projects</h1>
   <div class="experience-details-container">
-        <div class="details-container color-container">
-            <div class="article-container">
-                <div class="slideshow-container">
-                    <img src="./assets/project/tictactoe/1.jpg" alt="Project 1" class="project-img slide static">
-                    <img src="./assets/project/tictactoe/2.jpg" alt="Project 1, Additional View" class="project-img slide">
-                    <img src="./assets/project/tictactoe/3.jpg" alt="Project 1, Additional View" class="project-img slide">
-                </div>
-            </div>
-            <h2 class="experience-sub-title project-title">Tic Tac Toe</h2>
-            <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/', '_blank', 'noopener,noreferrer');">
-                    Github
-                </button>
-                <div class="dropdown">
-                    <button class="btn btn-color-2 project-btn dropdown-toggle">
-                        Live Demo
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="https://youtu.be/TWcV-bMbiUk">Bluetooth Multiplayer</a>
-                        <a href="https://example.com/live-demo">vs AI</a>
-                    </div>
-                </div>
-            </div>
+    <div class="details-container color-container">
+      <div class="article-container">
+        <div class="slideshow-container">
+          <img src="./assets/project/tictactoe/1.jpg" alt="Project 1" class="project-img slide static">
+          <img src="./assets/project/tictactoe/2.jpg" alt="Project 1, Additional View" class="project-img slide">
+          <img src="./assets/project/tictactoe/3.jpg" alt="Project 1, Additional View" class="project-img slide">
         </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <div class="slideshow-container">
-              <img src="./assets/project/phishing/pic1.png" alt="Project 1" class="project-img slide static">
-              <img src="./assets/project/phishing/pic2.png" alt="Project 1, Additional View" class="project-img slide">
-          </div>
+        <button class="info-button" onclick="toggleDescription('desc-tictactoe')">ℹ️</button>
+        <p class="project-description" id="desc-tictactoe" style="display: none;">
+          This project develops a Tic-Tac-Toe app for Android, featuring an AI opponent that uses the Minimax
+          algorithm with alpha-beta pruning for optimized gameplay across three difficulty levels: Easy, Medium,
+          and Hard. The app records game data for persistence and includes a Bluetooth multiplayer mode
+          for two-player games on separate devices.
+        </p>
       </div>
-        <h2 class="experience-sub-title project-title">Phishing Detection</h2>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/shoviknandy/Phishing-detection---ML', '_blank', 'noopener,noreferrer');">
-            Github
+      <h2 class="experience-sub-title project-title">Tic Tac Toe</h2>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn"
+          onclick="window.open('https://github.com/', '_blank', 'noopener,noreferrer');">
+          Github
         </button>
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/'"
-          >
+        <div class="dropdown">
+          <button class="btn btn-color-2 project-btn dropdown-toggle">
             Live Demo
           </button>
-        </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/project-3.png"
-            alt="Project 3"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Project Three</h2>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/'"
-          >
-            Github
-          </button>
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/'"
-          >
-            Live Demo
-          </button>
+          <div class="dropdown-content">
+            <a href="https://youtu.be/TWcV-bMbiUk">Bluetooth Multiplayer</a>
+            <a href="https://example.com/live-demo">vs AI</a>
+          </div>
         </div>
       </div>
     </div>
+    <div class="details-container color-container">
+      <div class="article-container">
+        <div class="slideshow-container">
+          <img src="./assets/project/phishing/pic1.png" alt="Project 1" class="project-img slide static">
+          <img src="./assets/project/phishing/pic2.png" alt="Project 1, Additional View" class="project-img slide">
+        </div>
+        <button class="info-button" onclick="toggleDescription('desc-phishing')"
+          aria-label="Toggle description for Phishing Detection">ℹ️</button>
+        <p class="project-description" id="desc-phishing" style="display: none;">
+          This project aims to detect phishing URLs using advanced machine learning techniques. We compare and
+          contrast different algorithms
+          to identify the most effective approach in phishing detection.
+          <br><br>
+          • Machine Learning Framework: XGBoost <br><br>
+          • Feature Engineering: Engineered 26 features to robustly identify phishing characteristics in URLs. <br><br>
+          • Dataset: Utilized a diverse dataset comprising 10,000 URLs.
+        </p>
+      </div>
+      <h2 class="experience-sub-title project-title">Phishing Detection</h2>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn"
+          onclick="window.open('https://github.com/shoviknandy/Phishing-detection---ML', '_blank', 'noopener,noreferrer');">
+          Github
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+          Live Demo
+        </button>
+      </div>
+    </div>
+    <div class="details-container color-container">
+      <div class="article-container">
+        <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+      </div>
+      <h2 class="experience-sub-title project-title">Project Three</h2>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+          Github
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+          Live Demo
+        </button>
+      </div>
+    </div>
+  </div>
   </div>
 </section>

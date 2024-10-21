@@ -1,7 +1,8 @@
 .slideshow-container {
   position: relative;
-  width: 100%;
-  overflow: hidden; /* Hide overflow to keep slides contained */
+  width: 100%; /* Responsive width */
+  height: 400px; /* Consider using vw or % for responsive design */
+  overflow: hidden;
 }
 
 .project-img.slide {
@@ -9,9 +10,53 @@
   top: 0;
   left: 100%; /* Start sliding from the right */
   width: 100%;
-  height: auto;
+  height: 100%; /* Ensure slides cover the container fully */
   opacity: 0;
   animation: slideIn 12s infinite; /* Adjust total time for the full loop */
+}
+
+.info-button {
+  position: absolute;
+  visibility: visible; /* Ensures the button is not hidden */
+  display: flex; /* Use flexbox for centering text/icon */
+  top: -10px; /* Adjust the distance from the top of the container */
+  right: -10px; /* Adjust the distance from the right of the container */
+  background-color: #fff; /* White background initially */
+  color: #000; /* Black text color for contrast */
+  border: 2px solid #000; /* Thicker black border for visibility */
+  border-radius: 50%; /* Keeps the button circular */
+  width: 30px; /* Fixed width */
+  height: 30px; /* Fixed height */
+  font-size: 16px; /* Icon size, adjust as needed */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Enhanced shadow for 3D effect */
+  transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition for hover effects */
+}
+
+.info-button:hover {
+  background-color: #000; /* Black background on hover */
+  color: #fff; /* White text color on hover */
+  border: 2px solid #fff; /* White border on hover for contrast */
+}
+
+.project-description {
+  position: absolute;
+  top: 40px; /* Start below the button */
+  right: -30px; /* Align to the right edge */
+  width: 350px; /* Full width minus padding */
+  padding: 10px;
+  background: white;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  display: none;
+}
+
+.article-container:hover .project-description {
+  visibility: visible; /* Make visible on hover */
+  opacity: 1; /* Transition to fully visible */
+  transform: translateY(0%); /* Move to original position */
 }
 
 @keyframes slideIn {

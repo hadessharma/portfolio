@@ -1,12 +1,5 @@
 import { initializeDropdown } from "./javascript/dropdown.js";
 
-function toggleHamburger() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
-
 class ExperienceSection extends HTMLElement {
   connectedCallback() {
     fetch("experience.html")
