@@ -1,4 +1,3 @@
-// dropdown.js
 export function initializeDropdown() {
   const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
 
