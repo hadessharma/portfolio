@@ -85,6 +85,7 @@ a:hover {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  transition: all 0.3 ease-in-out;
 }
 
 .hamburger-icon span {
@@ -486,30 +487,6 @@ footer p {
 
 /* EXTRA */
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown-toggle:focus + .dropdown-content {
-  display: block;
-}
-
 .details-container.color-container {
   flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
   max-width: 300px; /* Maximum width of each card */
@@ -548,7 +525,7 @@ footer p {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
   z-index: 1; /* Ensures dropdown content stacks on top of other content */
   border: 2px solid #ccc; /* Matching border with the button */
-  border-radius: 8px; /* Rounded corners for dropdown content */
+  border-radius: 1.5rem; /* Rounded corners for dropdown content */
   overflow: hidden; /* Ensures no inner content overflows the rounded borders */
 }
 
@@ -558,6 +535,7 @@ footer p {
   text-decoration: none; /* No underline */
   display: block; /* Makes each link block-level for better hit area */
   transition: background-color 0.2s; /* Smooth transition for hover */
+  white-space: nowrap;
 }
 
 .dropdown-content a:hover {
