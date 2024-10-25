@@ -1,8 +1,13 @@
 .slideshow-container {
   position: relative;
   width: 100%; /* Responsive width */
-  height: 400px; /* Consider using vw or % for responsive design */
   overflow: hidden;
+}
+.slideshow-container-1 {
+  position: relative;
+  width: 100%; /* Responsive width */
+  overflow: hidden;
+  /* margin-bottom: 50px; */
 }
 
 .project-img.slide {
@@ -27,14 +32,15 @@
   border-radius: 50%; /* Keeps the button circular */
   width: 30px; /* Fixed width */
   height: 30px; /* Fixed height */
-  font-size: 16px; /* Icon size, adjust as needed */
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
   cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Enhanced shadow for 3D effect */
   transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition for hover effects */
-  font-family: Arial, sans-serif; /* Ensures a web-safe font that doesn't convert to emoji */
+  font-family: "BaskervilleSemiBoldItalic", serif; /* Uses Roboto, ensures a web-safe fallback */
   font-weight: bold; /* Makes the 'i' more prominent */
+  font-style: italic; /* Makes the text/icon inside the button italic */
+  font-size: 26px;
 }
 
 .info-button:hover {

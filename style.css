@@ -218,11 +218,11 @@ section {
 }
 
 .btn {
-  font-size: 600;
+  font-size: 15px;
   transition: all 300ms ease;
   padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
+  width: 9rem;
+  border-radius: 1rem;
 }
 
 .btn-color-1,
@@ -286,27 +286,21 @@ section {
   display: flex;
   flex-direction: column; /* Stack experience and education on top of each other */
   align-items: center; /* Center align these items within the right section */
-  gap: 0.5rem; /* Minimal space between experience and education */
-}
-
-.details-container {
-  width: 80%; /* Adjust width to 80% of its parent's width */
-  padding: 1rem;
-  border-radius: 2rem;
-  border: 1px solid #a3a3a3;
-  text-align: center;
+  gap: 2rem; /* Minimal space between experience and education */
+  width: 40rem;
 }
 
 .text-container {
-  width: 80%; /* Match width with the details containers above */
+  width: 100%; /* Match width with the details containers above */
   padding: 1rem; /* Consistency in padding */
+  text-align: center;
 }
 
 /* Use negative margins to bring sections closer */
 .left-section {
   position: relative;
-  top: -70px; /* Move up by 10px; adjust the value as needed */
-  right: -50px; /* Move right by 10px; this is a negative value to move it right */
+  top: 0px; /* Move up by 10px; adjust the value as needed */
+  right: 0px; /* Move right by 10px; this is a negative value to move it right */
 }
 
 .section-container {
@@ -340,10 +334,6 @@ section {
   display: flex;
 }
 
-.about-pic {
-  border-radius: 2rem;
-}
-
 .arrow {
   position: absolute;
   right: -5rem;
@@ -354,9 +344,11 @@ section {
   padding: 1.5rem;
   flex: 1;
   background: white;
-  border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
+  text-align: center;
+  width: 80%; /* Adjust width to 80% of its parent's width */
+  border-radius: 1.5rem;
   text-align: center;
 }
 
@@ -429,12 +421,6 @@ article .icon {
   background: rgb(250, 250, 250);
 }
 
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-
 .project-title {
   margin: 1rem;
   color: black;
@@ -443,6 +429,7 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+  font-size: 15px;
 }
 
 /* CONTACT */
@@ -529,7 +516,7 @@ footer p {
   padding: 20px; /* Padding inside each card */
   background-color: #fff; /* Background color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  border-radius: 10px; /* Rounded corners for aesthetics */
+  border-radius: 1.5rem; /* Rounded corners for aesthetics */
   transition: transform 0.3s; /* Smooth transform effect on hover */
 }
 .details-container.color-container:hover {
@@ -539,8 +526,7 @@ footer p {
 .project-img {
   width: 100%; /* Make the image fill the card width */
   height: auto; /* Maintain aspect ratio */
-  border-top-left-radius: 10px; /* Rounded corners on the top */
-  border-top-right-radius: 10px;
+  border-radius: 1.5rem;
 }
 
 .dropdown-toggle {
