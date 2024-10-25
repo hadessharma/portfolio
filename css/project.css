@@ -43,7 +43,46 @@
   font-size: 26px;
 }
 
-.info-button:hover {
+.info-button-1 {
+  position: absolute;
+  visibility: visible; /* Ensures the button is not hidden */
+  display: flex; /* Use flexbox for centering text/icon */
+  top: -10px; /* Adjust the distance from the top of the container */
+  right: -10px; /* Adjust the distance from the right of the container */
+  background-color: #fff; /* White background initially */
+  color: #000; /* Black text color for contrast */
+  border: 2px solid #000; /* Thicker black border for visibility */
+  border-radius: 50%; /* Keeps the button circular */
+  width: 30px; /* Fixed width */
+  height: 30px; /* Fixed height */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Enhanced shadow for 3D effect */
+  transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition for hover effects */
+  font-family: "BaskervilleSemiBoldItalic", serif; /* Uses Roboto, ensures a web-safe fallback */
+  font-weight: bold; /* Makes the 'i' more prominent */
+  font-style: italic; /* Makes the text/icon inside the button italic */
+  font-size: 26px;
+}
+
+.project-description-1 {
+  position: absolute;
+  top: 40px; /* Start below the button */
+  right: -30px; /* Align to the right edge */
+  width: 350px; /* Full width minus padding */
+  padding: 10px;
+  background: white;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.info-button-1:hover + .project-description-1 {
+  opacity: 1;
+}
+
+.info-button-1:hover {
   background-color: #000; /* Black background on hover */
   color: #fff; /* White text color on hover */
   border: 2px solid #fff; /* White border on hover for contrast */
