@@ -428,12 +428,6 @@ article .icon {
   color: black;
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-  font-size: 15px;
-}
-
 /* CONTACT */
 
 #contact {
@@ -446,7 +440,7 @@ article .icon {
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
@@ -501,19 +495,24 @@ footer p {
   transform: translateY(-5px); /* Slight raise effect on hover */
 }
 
+.details-container.color-container-1 {
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
+  max-width: 600px;
+  margin: 10px; /* Space between cards */
+  padding: 20px; /* Padding inside each card */
+  background-color: #fff; /* Background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border-radius: 1.5rem; /* Rounded corners for aesthetics */
+  transition: transform 0.3s; /* Smooth transform effect on hover */
+}
+.details-container.color-container-1:hover {
+  transform: translateY(-5px); /* Slight raise effect on hover */
+}
+
 .project-img {
   width: 100%; /* Make the image fill the card width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 1.5rem;
-}
-
-.dropdown-toggle {
-  border: none; /* No border */
-  cursor: pointer; /* Cursor pointer on hover */
-  transition: background-color 0.3s; /* Smooth transition for color change */
-  color: black;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
 }
 
 /* Dropdown content styling */
